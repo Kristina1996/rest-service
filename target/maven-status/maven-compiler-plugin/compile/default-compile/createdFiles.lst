@@ -1,0 +1,9 @@
+com\krist\restservice\server\config\DatabaseConfig.class
+com\krist\restservice\server\entity\Client.class
+com\krist\restservice\server\service\UserService.class
+com\krist\restservice\server\controller\UserController.class
+com\krist\restservice\server\config\RestConfig.class
+com\krist\restservice\server\config\WebConfig.class
+com\krist\restservice\server\ApplicationInitializer.class
+com\krist\restservice\server\repository\UserRepository.class
+com\krist\restservice\server\service\UserServiceImpl.class
