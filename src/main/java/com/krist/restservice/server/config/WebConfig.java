@@ -3,6 +3,7 @@ package com.krist.restservice.server.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.hibernate4.Hibernate4Module;
+import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -24,7 +25,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
         ObjectMapper mapper = new ObjectMapper();
         //Registering Hibernate4Module to support lazy objects
-        mapper.registerModule(new Hibernate4Module());
+        
+        //mapper.registerModule(new Hibernate4Module());
+        mapper.registerModule(new Hibernate5Module());
 
         messageConverter.setObjectMapper(mapper);
         return messageConverter;

@@ -37,6 +37,12 @@ public class UserController {
     public Client createUser(@RequestBody Client user) {
         return service.create(user);
     }
+    
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    @ResponseBody
+    public Client updateUser(@RequestBody Client user) {
+        return service.create(user);
+    }
 
     @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
     @ResponseBody
